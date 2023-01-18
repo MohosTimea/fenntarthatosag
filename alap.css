@@ -1,0 +1,214 @@
+ul{
+    list-style-type: none;
+}
+.menu{
+    display: grid;
+  grid-template-columns: auto auto auto;
+}
+a{
+    padding: 5px;
+}
+a:link {
+    color: red;
+    text-decoration: none;
+    border: 3px solid hotpink;
+    
+
+  }
+   
+  a:visited {
+    color: purple;
+    text-decoration: none;
+    border: 3px solid hotpink;
+  }
+   
+  a:hover {
+    color: hotpink;
+    text-decoration: none;
+    border: 3px solid hotpink;
+  }
+  
+  a:active {
+    color: hotpink;
+    text-decoration: none;
+    border: 3px solid hotpink;
+  }
+main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "a as"
+    "f f"
+    ;
+    
+}
+header{
+    grid-area: h;
+}
+article{
+    grid-area: a;
+}
+nav{
+    
+    grid-area: n;
+}
+footer{
+    grid-area: f;
+}
+aside{
+    grid-area: as;
+}
+.kep1{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    
+}
+body{
+    
+    color:white;
+    background-color: black;
+    margin: 10px;
+
+}
+.kep2{
+    float: left;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    
+}
+
+.kep{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.jel {
+    list-style-image:url("feketeharomszog.png");
+  }
+.erdekessegek{
+    border: 3px solid purple;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 60px;
+    
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    
+  }
+  
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+   
+
+}
+td, th {
+    border: 1px solid white;
+}
+tbody tr:nth-child(odd){
+    background-color: blue;
+}
+.vezess{
+    border: 3px solid white;
+}
+#tablazat{
+    padding-left: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    
+
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align:center;
+}
+.tolto{
+    padding-bottom: 20px;
+}
+.hatter{
+    background-color: black;
+    margin: 5%;
+}
+.kep3{
+    
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        padding-bottom: 65px;
+}
+body{
+    
+    
+    background-image:url("hatter.jpg") ;
+    
+}
+nav{
+    padding-bottom: 10px;
+}
+header{
+    padding-top: 20px;
+}
+
+header,main,aside,article {
+    min-height: 100px;
+  }
+  @media screen and (min-width: 481px) {
+    main{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "a as"
+    "f f"
+    ;}
+  }
+  @media screen and (max-width: 480px) {
+   p{
+    font-size: 12px;
+   }
+   h1{
+    font-size: 32px;
+   }
+   h3{
+    font-size: 25px;
+   }
+   main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "a a"
+    "as as"
+    "f f"
+    ;
+   }
+   table{
+    width: 50px;
+    height: auto;
+   }
+   #tablazat{
+    overflow-x:auto;
+   }
+  }
+  
